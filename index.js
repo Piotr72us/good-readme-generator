@@ -26,10 +26,13 @@ const questions = [
 
 //function to run this app
 async function init() {
+    //get answers
     const answers = await inquirer.prompt(questions);
-    
-    const htmlString = generateMarkdown(answers);
 
+    // generate html
+    const htmlString = generateMarkdown(answers);
+    
+    // save to file
     await writeAsync(answers.name + ".md", htmlString);
 
 }
