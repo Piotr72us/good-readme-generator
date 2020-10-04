@@ -10,16 +10,47 @@ const writeAsync = util.promisify(fs.writeFile);
 const questions = [
     {
         message: "What is your project title?",
-        name: "title"
-    },
-    {    
-        message: "What is your name?",
-        name: "name"
+        name: "title",
+        type: "input"
     },
     {
-        message: "What is your age?",
-        name: "age"
+        message: "What is your descripion?",
+        name: "description",
+        type: "input"
+    },
+    {
+        message: "Installation instructions",
+        name: "installation",
+        type: "input"
+    },
+    {
+        message: "Usage information",
+        name: "usage",
+        type: "input"
+    },
+    {
+        message: "Contribution guidelines",
+        name: "contribution",
+        type: "input"
+    },
+    {
+        message: "Test instructions?",
+        name: "test",
+        type: "input"
+    },
+    {
+        message: "Licenses",
+        choices: ["MIT", "Apache 2.0", "GPL 3.0"],
+        name: "license",
+        type: "list"
+    },
+    {
+        message: "Github username?",
+        name: "username",
+        type: "input"
     }
+
+    // [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ];
 
 
@@ -31,9 +62,9 @@ async function init() {
 
     // generate html
     const htmlString = generateMarkdown(answers);
-    
+
     // save to file
-    await writeAsync(answers.name + ".md", htmlString);
+    await writeAsync("README.md", htmlString);
 
 }
 
