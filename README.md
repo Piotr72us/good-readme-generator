@@ -1,33 +1,28 @@
 
-
-
-
-# dddd
-
-## Table of contents:
-* Take me to [test](#test)
-
-## Project Description:
-ereee
-
-## Installation Instructions:
-t
-
-## Usage:
-t
-
-## Contributions:
-t
-
-## test:
-hyyt
-
-## License:
+# Readme
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Github Username:
-yytyty
+## Description
+Simple homework
 
+## Table of Contents
+* [Test](#Test)
 
+## Installation
+This application will be invoked with the following command:
+node index.js
 
+## Usage
+for developers only
 
+## License
+This application is covered under MIT license.
+
+## Contributing
+Joao Campos - TA
+
+## Test
+N/A
+
+## Questions
+Piotr72us

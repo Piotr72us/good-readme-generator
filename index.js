@@ -14,32 +14,32 @@ const questions = [
         type: "input"
     },
     {
-        message: "What is your descripion?",
+        message: "Please enter project description",
         name: "description",
         type: "input"
     },
     {
-        message: "Installation instructions",
+        message: "Provide simple installation instructions",
         name: "installation",
         type: "input"
     },
     {
-        message: "Usage information",
+        message: "Please enter usage information",
         name: "usage",
         type: "input"
     },
     {
-        message: "Contribution guidelines",
+        message: "Please mention any contribution guidelines",
         name: "contribution",
         type: "input"
     },
     {
-        message: "Test instructions?",
+        message: "Please provide test instructions",
         name: "test",
         type: "input"
     },
     {
-        message: "Licenses",
+        message: "Choose your license",
         choices: ["MIT", "Apache 2.0", "GPL 3.0"],
         name: "license",
         type: "list"
@@ -49,8 +49,6 @@ const questions = [
         name: "username",
         type: "input"
     }
-
-    // [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ];
 
 
@@ -64,7 +62,7 @@ async function init() {
     const htmlString = generateMarkdown(answers);
 
     // save to file
-    await writeAsync("README.md", htmlString);
+    await writeAsync(answers.title + ".md", htmlString);
 
 }
 
