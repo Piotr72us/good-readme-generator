@@ -5,6 +5,7 @@ const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 const writeAsync = util.promisify(fs.writeFile);
 
+
 // array of questions to generate readme file
 const questions = [
     {
@@ -21,10 +22,7 @@ const questions = [
     }
 ];
 
-// function to save to file
-async function writeToFile(fileName, data) {
-    await writeAsync(fileName, data);
-}
+
 
 //function to run this app
 async function init() {
@@ -32,8 +30,7 @@ async function init() {
     
     const htmlString = generateMarkdown(answers);
 
-    writeToFile(answers.name + ".md", htmlString)
-    // await writeAsync(answers.name + ".md", htmlString);
+    await writeAsync(answers.name + ".md", htmlString);
 
 }
 
