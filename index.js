@@ -5,7 +5,6 @@ const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 const writeAsync = util.promisify(fs.writeFile);
 
-
 // array of questions to generate readme file
 const questions = [
     {
@@ -34,23 +33,28 @@ const questions = [
         type: "input"
     },
     {
-        message: "Please provide test instructions",
+        message: "Provide testing framework if applicable:",
+        choices: ["Jest", "Mocha", "Jasmine", "Karma", "N/A"],
         name: "test",
-        type: "input"
+        type: "list"
     },
     {
-        message: "Choose your license",
-        choices: ["MIT", "Apache 2.0", "GPL 3.0"],
+        message: "Choose your license:",
+        choices: ["MIT", "Apache 2.0", "GPL 2.0", "GPL 3.0", "Unlicense"],
         name: "license",
         type: "list"
     },
     {
-        message: "Github username?",
+        message: "GitHub username",
         name: "username",
+        type: "input"
+    },
+    {
+        message: "Email address",
+        name: "email",
         type: "input"
     }
 ];
-
 
 
 //function to run this app
@@ -63,7 +67,6 @@ async function init() {
 
     // save to file
     await writeAsync(answers.title + ".md", htmlString);
-
 }
 
 // call the function to run this app
