@@ -1,6 +1,7 @@
 
 # :triangular_ruler: Readme Architect :triangular_ruler:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![JSbadge](https://img.shields.io/badge/javascript-100.0%25-blue)
 
 ## Description
 __Readme Architect__ is a CLI application created in node.js that enable developers to automate the process of creating standardized and compelling README markdown files for GitHub repositories.
