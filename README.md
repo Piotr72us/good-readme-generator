@@ -1,5 +1,5 @@
 
-# Readme Architect
+# :triangular_ruler: Readme Architect :triangular_ruler:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
@@ -25,6 +25,13 @@ Its user-friendly command-line interface will suit any project, from the simplie
 To execute the application, provide information and answer questions in the command line.
 The name of your project will become the name of your README file.
 Look at the screenshots to see how easy it is!
+
+<p align="center">
+  <img src="https://media.giphy.com/media/7cl98qcD40f8j8G0Em/giphy.gif" />
+</p>
+
+![screenshot](img/screenshot.png)
+
 
 ## License
 This application is covered under MIT license.
