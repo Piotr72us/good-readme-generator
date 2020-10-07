@@ -58,7 +58,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-This application is covered under ${licensetxt}.
+This application is covered under the ${licensetxt}.
 
 ## Contributing
 ${data.contribution}

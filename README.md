@@ -4,7 +4,7 @@
 ![JSbadge](https://img.shields.io/badge/javascript-100.0%25-blue)
 
 ## Description
-__Readme Architect__ is a CLI application created in node.js that enable developers to automate the process of creating standardized and compelling README markdown files for GitHub repositories.
+__Readme Architect__ is a CLI application built in node.js that enables developers to automate the process of creating standardized and compelling README markdown files for GitHub repositories.
 
 ## Table of Contents
 * [Installation](#Installation)
@@ -16,14 +16,14 @@ __Readme Architect__ is a CLI application created in node.js that enable develop
 
 ## Installation
 1. Copy the SSH link to this repository from GitHub to the clipboard.
-2. Paste the link in the terminal using the command "git clone [copied SSH link]" in order to install this repository.
-3. This application will be executed in terminal with the following command: "node index.js"
+2. Paste the link in the terminal using the command "git clone [copied SSH link]" in order to install this repository on your computer.
+3. This application will be executed in the VSC terminal with the following command: "node index.js"
 
 ## Usage
-__Readme Architect__ can be used by anyone who wants to streamline to process of creating quality README files.
+__Readme Architect__ can be used by anyone who wants to streamline the process of creating quality README files.
 The app can be used for any repository.
-Its user-friendly command-line interface will suit any project, from the simpliest to the most complex.
-To execute the application, provide information and answer questions in the command line.
+Its user-friendly command-line interface will suit any project, from the simplest to the most complex.
+To execute the application, provide requested project information and answer questions in the command line.
 The name of your project will become the name of your README file.
 Look at the screenshots to see how easy it is!
 
@@ -35,10 +35,11 @@ Look at the screenshots to see how easy it is!
 
 
 ## License
-This application is covered under MIT license.
+This application is covered under the MIT license.
 
 ## Contributing
-Many thanks to Joao Campos for helping me navigate through the meanders of node.js.
+If you want to contribute to this repo, please follow the good practices of Contributor Covenant.<br/>
+Many thanks to Joao Campos for helping me navigate through node.js.
 
 ## Test
 Coming soon!
