@@ -24,7 +24,7 @@ __Readme Architect__ can be used by anyone who wants to streamline the process o
 The app can be used for any repository.
 Its user-friendly command-line interface will suit any project, from the simplest to the most complex.
 To execute the application, provide requested project information and answer questions in the command line.
-The name of your project will become the name of your README file.
+The title of your project will become the title of your README file.
 Look at the screenshots to see how easy it is!
 
 <p align="center">
