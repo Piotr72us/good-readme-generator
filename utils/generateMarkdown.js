@@ -50,7 +50,9 @@ ${data.description}
 
 ## Installation
 This application will be invoked with the following command:
-"${data.installation}"
+\`\`\`
+${data.installation}
+\`\`\`
 
 ## Usage
 ${data.usage}

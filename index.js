@@ -1,6 +1,5 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-// const open = require("open");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 const writeAsync = util.promisify(fs.writeFile);
@@ -13,30 +12,32 @@ const questions = [
         type: "input"
     },
     {
-        message: "Please enter project description",
+        message: "Please enter project description:",
         name: "description",
         type: "input"
     },
     {
-        message: "Provide simple installation instructions",
+        message: "Provide installation instructions:",
         name: "installation",
-        type: "input"
+        type: "input",
+        default: "node index.js"
     },
     {
-        message: "Please enter usage information",
+        message: "Please enter usage information:",
         name: "usage",
         type: "input"
     },
     {
-        message: "Please mention any contribution guidelines",
+        message: "Please mention any contributors and contribution guidelines:",
         name: "contribution",
-        type: "input"
+        type: "input",
+        default: "Contributor Covenant"
     },
     {
-        message: "Provide testing framework if applicable:",
-        choices: ["Jest", "Mocha", "Jasmine", "Karma", "N/A"],
+        message: "What command should be entered to run tests?",
         name: "test",
-        type: "list"
+        type: "input",
+        default: "npm run test"
     },
     {
         message: "Choose your license:",
@@ -45,12 +46,12 @@ const questions = [
         type: "list"
     },
     {
-        message: "GitHub username",
+        message: "GitHub username:",
         name: "username",
         type: "input"
     },
     {
-        message: "Email address",
+        message: "Email address:",
         name: "email",
         type: "input"
     }
@@ -66,7 +67,7 @@ async function init() {
     const htmlString = generateMarkdown(answers);
 
     // save to file
-    await writeAsync(answers.title + ".md", htmlString);
+    await writeAsync("README.md", htmlString);
 }
 
 // call the function to run this app
