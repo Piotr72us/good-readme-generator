@@ -49,5 +49,5 @@ Many thanks to Joao Campos for helping me navigate through node.js.
 Coming soon!
 
 ## Questions
-If you have any questions, reach me via GitHub: [piotr72us](https://github.com/Piotr72us)<br/>
+If you have any questions, reach me via GitHub: [peterdudek](https://github.com/peterdudek)<br/>
 or send me an email at: piotr72@gmail.com
