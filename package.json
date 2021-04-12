@@ -15,12 +15,12 @@
     "generator",
     "inquirer"
   ],
-  "author": "piotr dudek",
+  "author": "peter dudek",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Piotr72us/good-readme-generator/issues"
+    "url": "https://github.com/peterdudek/good-readme-generator/issues"
   },
-  "homepage": "https://github.com/Piotr72us/good-readme-generator#readme",
+  "homepage": "https://github.com/peterdudek/good-readme-generator#readme",
   "dependencies": {
     "inquirer": "^7.3.3"
   }
